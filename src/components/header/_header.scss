@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 10px 0 ;
+
+  ul {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  li {
+    padding: 2px 20px;
+    border-radius: 10px;
+  }
+
+  .nav-active{
+    background: $color-1;
+    border-radius: 10px;
+  }
+
+  h1{
+    font-size: 3rem;
+    text-shadow: 3px 3px 2px $color-1;
+  }
+}
