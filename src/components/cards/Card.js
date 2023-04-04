@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import poster from '../cards/poster.jpg';
+import { addToLocalStorage, removeFromLocalStorage } from './localStorage';
 
-const Card = ({ movie, genre }) => {
+const Card = ({ movie, genre, reload }) => {
   const [date, setDate] = useState();
   const [rating, setRating] = useState(0);
+  const [liked, setLiked] = useState(false);
   const genreArray = genre;
 
   const dateFormat = (date) => {
@@ -22,10 +24,24 @@ const Card = ({ movie, genre }) => {
     }
   };
 
+  const handleClickAdd = (e) => {
+    e.preventDefault();
+    addToLocalStorage(movie);
+    setLiked(true);
+  };
+
+  const handleClickRemove = (e) => {
+    e.preventDefault();
+    removeFromLocalStorage(movie);
+    setLiked(false);
+    if (reload) window.location.reload();
+  };
+
   useEffect(() => {
+    if (localStorage.getItem(`React-app-cine-${movie.id}`)) setLiked(true);
     dateFormat(movie.release_date);
     ratingFormat(movie.vote_average);
-  }, [movie.release_date, movie.vote_average]);
+  }, [movie.release_date, movie.vote_average, movie.id, liked]);
 
   return (
     <li className="card">
@@ -60,6 +76,15 @@ const Card = ({ movie, genre }) => {
         <p>Synopsys</p>
         <p>{movie.overview}</p>
       </div>
+      {!liked ? (
+        <button className="btn" id="like" onClick={handleClickAdd}>
+          Ajouter aux coups de coeur
+        </button>
+      ) : (
+        <button className="btn" id="like" onClick={handleClickRemove}>
+          Supprimer des coups de coeur
+        </button>
+      )}
     </li>
   );
 };

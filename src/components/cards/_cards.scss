@@ -13,9 +13,9 @@
   height: 600px;
   border-radius: 20px;
   background: darken($color-2, 7);
+  position: relative;
 
   .img-content {
-
     width: 70%;
     height: 230px;
     margin: 20px auto 0;
@@ -103,7 +103,6 @@
 
   span {
     position: relative;
-  
   }
 
   i {
@@ -124,6 +123,17 @@
       background: lighten($color-2, 5);
       padding: 0 5px;
       border-radius: 20px;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    width: 65%;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:active {
+      transform: translateX(-50%) scale(0.9);
     }
   }
 }

@@ -39,11 +39,14 @@ const Home = () => {
     <div>
       <Header />
       <ul className="card-container">
-        {data && genre &&
+        {data &&
+          genre &&
           data.map(
             (movie) => (
               //   movie.media_type === 'movie' && (
-              <Card key={movie.id} movie={movie} genre={genre}/>
+              
+                <Card key={movie.id} movie={movie} genre={genre} reload={false}/>
+              
             )
             //   )
           )}

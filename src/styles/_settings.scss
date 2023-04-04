@@ -34,8 +34,23 @@ li {
   color: $white;
 }
 
-.result {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.btn {
+  background-color: $color-1;
+  font-family: $font-2;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus-visible {
+    background-color: $white;
+    color: $color-1;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
 }
