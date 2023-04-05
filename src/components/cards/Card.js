@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import poster from '../cards/poster.jpg';
 import { addToLocalStorage, removeFromLocalStorage } from './localStorage';
 
-const Card = ({ movie, genre, reload }) => {
+const Card = ({ movie, genre, reloadState }) => {
   const [date, setDate] = useState();
   const [rating, setRating] = useState(0);
   const [liked, setLiked] = useState(false);
@@ -34,7 +34,7 @@ const Card = ({ movie, genre, reload }) => {
     e.preventDefault();
     removeFromLocalStorage(movie);
     setLiked(false);
-    if (reload) window.location.reload();
+    reloadState(true);
   };
 
   useEffect(() => {

@@ -12,9 +12,6 @@ const Home = () => {
       .get(
         `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_KEY}&language=fr-FR&query=war&include_adult=false`
       )
-      //   .get(
-      //     `https://api.themoviedb.org/3/search/multi?api_key=${process.env.REACT_APP_KEY}&language=fr-FR&query=tomorrow&page=1&include_adult=true`
-      //   )
       .then((res) => {
         setData(res.data.results);
       })

@@ -7,6 +7,7 @@ import { updateDataFromLocalStorage } from '../../components/cards/localStorage'
 const Favorites = () => {
   const [movies, setMovies] = useState([]);
   const [genre, setGenre] = useState();
+  const [reload, setReload] = useState(false)
 
   const getGenre = () => {
     axios
@@ -24,7 +25,8 @@ const Favorites = () => {
   useEffect(() => {
     updateData();
     getGenre();
-  }, []);
+    if(reload) updateData()
+  }, [reload]);
 
   return (
     <div>
@@ -33,7 +35,7 @@ const Favorites = () => {
         {movies &&
           genre &&
           movies.map((movie) => (
-            <Card key={movie.id} movie={movie} genre={genre} reload={true} />
+            <Card key={movie.id} movie={movie} genre={genre} reloadState={setReload} />
           ))}
       </ul>
     </div>
