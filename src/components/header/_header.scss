@@ -36,3 +36,14 @@ header {
     text-shadow: 3px 3px 2px $color-1;
   }
 }
+
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+    ul {
+      position: static;
+      margin-bottom: 25px;
+    }
+  }
+
+}
