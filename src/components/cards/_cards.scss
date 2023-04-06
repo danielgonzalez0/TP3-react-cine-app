@@ -8,8 +8,8 @@
 }
 
 .card {
-  width: 20%;
-  min-width: 240px;
+  min-width: 260px;
+  max-width: 280px;
   height: 600px;
   border-radius: 20px;
   background: darken($color-2, 7);
@@ -27,7 +27,7 @@
     &:after {
       content: '';
       position: absolute;
-      top: 7px;
+      top: 9px;
       left: 0;
       width: 100%;
       height: 100%;
@@ -39,7 +39,7 @@
     img {
       position: relative;
       width: 100%;
-      height: 223px;
+      height: 221px;
       object-fit: cover;
       border-radius: 30px;
       z-index: 3;
@@ -76,9 +76,11 @@
   }
 
   p:nth-of-type(3) {
+  
     line-height: 18px;
     min-height: 105px;
     font-size: 1.2rem;
+    overflow-y: scroll;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
@@ -131,6 +133,7 @@
     width: 65%;
     bottom: 15px;
     left: 50%;
+    font-size: 1.2rem;
     transform: translateX(-50%);
     &:active {
       transform: translateX(-50%) scale(0.9);
