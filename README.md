@@ -6,6 +6,15 @@
 ### Project Deployment link: 
 [link]https://tp-3-react-cine-app.vercel.app/
 
+### Project screenshots
+### `Homepage`
+
+![homepage](https://user-images.githubusercontent.com/86351071/231273246-44514de1-ddd5-4a93-ac61-4cdb16a0c809.png)
+
+### `Favorites`
+
+![favorites](https://user-images.githubusercontent.com/86351071/231274638-c6713175-393e-4aaf-bd7f-654a9406a5ec.png)
+
 
 # Getting Started with Create React App
 
