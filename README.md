@@ -1,4 +1,4 @@
-https://img.shields.io/badge/Deployed%20by-VERCEL-brightgreen?style=for-the-badge&logo=vercel
+[Vercel](https://img.shields.io/badge/VERCEL-Deployed%20by-brightgreen?style=for-the-badge&logo=vercel)
 
 ### Project Deployment link: 
 [link]https://tp-3-react-cine-app.vercel.app/
