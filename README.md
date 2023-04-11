@@ -1,3 +1,9 @@
+https://img.shields.io/badge/Deployed%20by-VERCEL-brightgreen?style=for-the-badge&logo=vercel
+
+### Project Deployment link: 
+[link]https://tp-3-react-cine-app.vercel.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
