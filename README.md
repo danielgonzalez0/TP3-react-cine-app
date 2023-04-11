@@ -1,5 +1,6 @@
 <p align="center">
 <img src="https://img.shields.io/badge/VERCEL-Deployed-brightgreen?style=for-the-badge&logo=vercel">
+<img src="https://img.shields.io/badge/Create%20with-React-blue?style=for-the-badge&logo=react">
 </p>
 
 ### Project Deployment link: 
