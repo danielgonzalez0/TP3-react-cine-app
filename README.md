@@ -44,7 +44,7 @@ version 1
 Cloner le projet
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/danielgonzalez0/TP3-react-cine-app.git
 ```
 
 Aller dans le répertoire du projet
