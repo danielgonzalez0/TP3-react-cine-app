@@ -13,11 +13,14 @@ lien formation : https://fromscratch.podia.com/
 Application cinéma qui permet de rechercher des films en tapant un titre dans la barre de recherche. Il est possible de sauvegarder des films en favoris sur la page coup de coeur.
 
 ## Version
-
 version 1 
 
 ### Project Deployment link: 
 [link](https://tp-3-react-cine-app.vercel.app/)
+## Demo
+
+![react-cine-anime](https://user-images.githubusercontent.com/86351071/231419628-5d149844-6119-4e18-b5cd-ce6f90b5fe40.gif)
+
 ## Features
 
 - recherche dynamique par titre
@@ -75,8 +78,8 @@ Pour exécuter ce projet, vous devrez ajouter les variables d'environnement suiv
 
 https://developers.themoviedb.org/3/search/search-movies
 
-```http
-  GET /search/movie
+```
+ GET /search/movie
 ```
 
 | Parameter | Type     | Description                |
@@ -85,13 +88,9 @@ https://developers.themoviedb.org/3/search/search-movies
 
 #### exemple appel API
 
-```http
+```
   https://api.themoviedb.org/3/search/movie?api_key=<<YOUR_API_KEY>>&language=fr-FR&query=<<KEYWORDS>>&page=1&include_adult=false
 ```
-
-## Demo
-
-![react-cine-anime](https://user-images.githubusercontent.com/86351071/231419628-5d149844-6119-4e18-b5cd-ce6f90b5fe40.gif)
 
 ## Screenshots
 
