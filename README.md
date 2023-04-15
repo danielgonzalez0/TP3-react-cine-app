@@ -3,36 +3,33 @@
 <img src="https://img.shields.io/badge/Create%20with-React-blue?style=for-the-badge&logo=react">
 </p>
 
-
 # Application Front-end Movie React
 
-Le projet est réalisé dans le cadre d'une formation front-end spécialisé dans l'utilisation de React.
+The project is part of a front-end training course specialising in  React.
 
-lien formation : https://fromscratch.podia.com/
+training link : https://fromscratch.podia.com/
 
-Application cinéma qui permet de rechercher des films en tapant un titre dans la barre de recherche. Il est possible de sauvegarder des films en favoris sur la page coup de coeur.
+the application allows you to search for films by typing a title in the search bar. It is possible to save films as favourites on the fav"coup de coeur" page.
 
 ## Version
+
 version 1 
 
 ### Project Deployment link: 
 [link](https://tp-3-react-cine-app.vercel.app/)
-## Demo
-
-![react-cine-anime](https://user-images.githubusercontent.com/86351071/231419628-5d149844-6119-4e18-b5cd-ce6f90b5fe40.gif)
-
 ## Features
 
-- recherche dynamique par titre
-- tri par notes (croissant et décroissant)
-- système de sauvegarde des favoris
-- design responsive
+- dynamic search by title
+- sorting by notes (ascending and descending)
+- bookmark saving system
+- responsive design
 
 ## Tech Stack
 
 **Client:** React, Axios, react-router-dom, Sass
 
 **Server:** none
+
 
 ## Required
 
@@ -41,32 +38,32 @@ version 1
 [![NPM](https://img.shields.io/badge/-NPM-CC3534?logo=npm&logoColor=white&style=for-the-badge)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 ## Installation
 
-Cloner le projet
+clone project
 
 ```bash
-  git clone https://github.com/danielgonzalez0/TP3-react-cine-app.git
+  git clone https://link-to-project
 ```
 
-Aller dans le répertoire du projet
+Go to the project directory
 
 ```bash
   cd my-project
 ```
 
-Installer les dépendences
+Install dependencies
 
 ```bash
   npm install
 ```
 
-Lancer le serveur
+launch server
 
 ```bash
   npm run start
 ```
 ## Environment Variables
 
-Pour exécuter ce projet, vous devrez ajouter les variables d'environnement suivantes à votre fichier .env
+To run this project, you will need to create an .env file at the root of the project and add the following environment variables to your .env file
 
 `REACT_APP_KEY`
 
@@ -78,8 +75,8 @@ Pour exécuter ce projet, vous devrez ajouter les variables d'environnement suiv
 
 https://developers.themoviedb.org/3/search/search-movies
 
-```
- GET /search/movie
+```http
+  GET /search/movie
 ```
 
 | Parameter | Type     | Description                |
@@ -88,9 +85,11 @@ https://developers.themoviedb.org/3/search/search-movies
 
 #### exemple appel API
 
-```
+```http
   https://api.themoviedb.org/3/search/movie?api_key=<<YOUR_API_KEY>>&language=fr-FR&query=<<KEYWORDS>>&page=1&include_adult=false
 ```
+## Demo
+![react-cine-anime](https://user-images.githubusercontent.com/86351071/231419628-5d149844-6119-4e18-b5cd-ce6f90b5fe40.gif)
 
 ## Screenshots
 
@@ -104,12 +103,14 @@ https://developers.themoviedb.org/3/search/search-movies
 
 ## 🚀 About Me
 
-En reconversion professionnelle pour devenir développeur Front-end , je suis actuellement la formation Développeur d'application - JavaScript React chez OpenClassrooms. 
+I am currently retraining to become a front-end developer and am taking the Application Developer - JavaScript React course at OpenClassrooms.
 
-L’objectif de cette formation est d’acquérir une spécialisation en front-end et de consolider les acquis que j’ai pu obtenir lors de ma précédente formation en développement web.
+The objective of this training is to acquire a specialization in front-end and to consolidate the knowledge that I obtained during my previous training in web development.
 
-Le but à terme est de trouver un premier poste en développeur web junior pour parfaire mes compétences et acquérir plus d'expérience. 
+The ultimate goal is to find a first position as a junior web developer to perfect my skills and gain more experience.
 
-Professionnel doté de nombreuses années d'expérience en contrôle de gestion et comptabilité, combinées à une solide formation supérieure, je suis capable de fonctionner de manière autonome, et je fais preuve d'un solide sens de l'organisation et de capacités d’analyse et de synthèse avérées. 
+I am a professional with many years of experience in controlling and accounting, combined with a solid higher education background. I am able to function independently, and I have a strong sense of organisation and proven analytical and synthesis skills.
 
-De nature empathique et rigoureuse, je suis à l’écoute des autres et je peux facilement travailler en équipe.
+I am empathetic and rigorous by nature, I listen to others and I can easily work in a team.
+
+
